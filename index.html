@@ -1,39 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashley's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header/Navigation -->
     <header>
-        <h1>MY PORTFOLIO</h1>
-        <p>IT Student | Video and Photo Editing Enthusiast | Gamer</p>
+        <div class="container">
+            <h1 class="logo">Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>"Hi! I'm Ashley Nadine J. Pairat, a 2nd-year IT student at the University of Science and Technology of Southern Philippines. 
-            I have a strong interest in technology and problem-solving, always eager to expand my knowledge in the field of IT. In my free time, I enjoy playing online games,
-             which have helped me develop strategic thinking and teamwork skills. I also have experience in video and photo editing—while I don't consider myself an expert, 
-             I love being creative and continuously improving my work. I'm always open to learning new things and taking on challenges that help me grow."</p>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span>Your Name</span></h1>
+                <h2>Web Developer & Designer</h2>
+                <p>I create beautiful, functional websites that help businesses grow.</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/400x400" alt="Profile Photo">
+            </div>
+        </div>
     </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Coming soon! Stay tuned for updates on my latest projects.</p>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who am I?</h3>
+                    <p>I'm a passionate web developer with 3 years of experience creating modern websites and web applications. I specialize in front-end development but also have back-end knowledge.</p>
+                    <p>When I'm not coding, you can find me hiking, reading tech blogs, or experimenting with new design trends.</p>
+                    <a href="#" class="btn">Download Resume</a>
+                </div>
+                <div class="about-skills">
+                    <h3>My Skills</h3>
+                    <div class="skills">
+                        <div class="skill-item">
+                            <div class="skill-name">HTML/CSS</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">React</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">UI/UX Design</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: ashleypairat22@gmail.com</p>
-        <p>GitHub: <a href="https://github.com/AshleyPairat2" target="_blank">github.com/AshleyPairat2</a></p>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 1">
+                    <div class="project-info">
+                        <h3>E-commerce Website</h3>
+                        <p>A fully responsive online store built with React and Node.js</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank">Live Demo</a>
+                            <a href="#" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 2">
+                    <div class="project-info">
+                        <h3>Portfolio Template</h3>
+                        <p>A clean, modern portfolio template for creatives</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank">Live Demo</a>
+                            <a href="#" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 3">
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>A productivity app with drag-and-drop functionality</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank">Live Demo</a>
+                            <a href="#" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> your.email@example.com</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> City, Country</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
