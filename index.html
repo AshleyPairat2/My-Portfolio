@@ -36,7 +36,7 @@
 
     <main>
         <!-- Hero Section -->
-        <section id="home" class="hero">
+        <section class="hero">
             <div class="container">
                 <div class="hero-content">
                     <h1>Hi, I'm <span>Ash</span></h1>
@@ -45,6 +45,7 @@
                     <a href="#projects" class="btn">View My Work</a>
                 </div>
                 <div class="hero-image">
+                    <!-- Profile picture -->
                     <img src="ash.jpg" alt="Ash's Profile Photo" class="profile-pic">
                 </div>
             </div>
@@ -84,7 +85,7 @@
                                 </div>
                             </div>
                             <div class="skill-item">
-                                <div class="skill-name">UI/UX Design</div>
+                                <div class="skill-name">Editing Videos</div>
                                 <div class="skill-bar">
                                     <div class="skill-level" style="width: 75%;"></div>
                                 </div>
@@ -100,42 +101,67 @@
             <div class="container">
                 <h2 class="section-title">My Projects</h2>
                 <div class="projects-grid">
+                    <!-- Video Project Card -->
                     <div class="project-card">
-                        <img src="https://via.placeholder.com/600x400" alt="Project 1">
-                        <div class="project-info">
-                            <h3>E-commerce Website</h3>
-                            <p>A fully responsive online store built with React and Node.js</p>
-                            <div class="project-links">
-                                <a href="#" target="_blank">Live Demo</a>
-                                <a href="#" target="_blank">Code</a>
-                            </div>
+                        <div class="video-container">
+                            <iframe 
+                                src="https://www.youtube.com/embed/UKxBGgB3YPA?si=aPrWCRvvBPG1qWx6" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen>
+                            </iframe>
                         </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="https://via.placeholder.com/600x400" alt="Project 2">
                         <div class="project-info">
-                            <h3>Portfolio Template</h3>
-                            <p>A clean, modern portfolio template for creatives</p>
-                            <div class="project-links">
-                                <a href="#" target="_blank">Live Demo</a>
-                                <a href="#" target="_blank">Code</a>
-                            </div>
+                            <h3>Infomercial Video Project</h3>
+                            <p>1st place winning video from senior high school. Edited with Adobe Premiere Pro.</p>
+                            
+                            <!-- YouTube Button -->
+                            <a href="https://www.youtube.com/watch?v=UKxBGgB3YPA" 
+                               target="_blank" 
+                               class="youtube-btn">
+                               <i class="fab fa-youtube"></i> Watch Infomercial
+                            </a>
                         </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="https://via.placeholder.com/600x400" alt="Project 3">
-                        <div class="project-info">
-                            <h3>Task Management App</h3>
-                            <p>A productivity app with drag-and-drop functionality</p>
-                            <div class="project-links">
-                                <a href="#" target="_blank">Live Demo</a>
-                                <a href="#" target="_blank">Code</a>
+                    
+                            <!-- 2. Gaming Video Project -->
+                            <div class="project-card">
+                                <a href="https://youtube.com/watch?v=UKxBGgB3YPA" target="_blank">
+                                    <img src="video-thumbnail.jpg" alt="Infomercial Video">
+                                </a>
+                                <!-- Keep existing description -->
                             </div>
-                        </div>
+                <div class="project-info">
+                    <h3>Gaming Montage</h3>
+                    <p>High-energy gameplay highlights showcasing editing skills with dynamic transitions and effects.</p>
+                    <div class="project-links">
+                        <a href="https://www.youtube.com/watch?v=felafiZAV2k" target="_blank" class="btn-link">
+                            <i class="fab fa-youtube"></i> Watch Full Video
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
+
+            <!-- 3. Other Project (Template) -->
+            <div class="project-card">
+                <img src="https://via.placeholder.com/600x400" alt="Portfolio Template">
+                <div class="project-info">
+                    <h3>Portfolio Template</h3>
+                    <p>A clean, modern portfolio template for creatives</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="#" target="_blank" class="btn-link">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         <!-- Contact Section -->
         <section id="contact" class="contact">
