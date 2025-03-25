@@ -229,3 +229,37 @@ nav ul li a:focus {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+/* Circular Profile Picture */
+.profile-pic {
+    width: 250px; /* Adjust size as needed */
+    height: 250px; /* Must match width for perfect circle */
+    object-fit: cover; /* Ensures image fills the circle */
+    border-radius: 50%; /* Makes it circular */
+    border: 5px solid var(--primary-color); /* Optional colored border */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    display: block; /* Ensures proper spacing */
+    margin: 0 auto; /* Centers the image */
+}
+
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.profile-pic {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
